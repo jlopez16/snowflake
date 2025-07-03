@@ -1,5 +1,8 @@
 version: '3.8'
 
+networks:
+  backend:
+
 services:
   zookeeper:
     image: bitnami/zookeeper:latest
@@ -8,6 +11,8 @@ services:
       - "2181:2181"
     environment:
       ALLOW_ANONYMOUS_LOGIN: yes
+    networks:
+      - backend
 
   kafka:
     image: bitnami/kafka:latest
@@ -21,6 +26,9 @@ services:
       ALLOW_PLAINTEXT_LISTENER: yes
     depends_on:
       - zookeeper
+    networks:
+      - backend
+
 
   mongo:
     image: mongo:6
@@ -30,6 +38,9 @@ services:
     environment:
       MONGO_INITDB_ROOT_USERNAME: admin
       MONGO_INITDB_ROOT_PASSWORD: admin123
+    networks:
+      - backend
+
 
 # mongo-express:
 #   image: mongo-express
