@@ -4,7 +4,7 @@ This project implements a microservices-based data pipeline to process customer 
 
 ---
 
-## 🧱 Project Structure
+## Project Structure
 
 ### 1. **customer-api**
 Service responsible for extracting data from Snowflake and publishing it to a Kafka topic. REST API for querying customer data stored in MongoDB.
