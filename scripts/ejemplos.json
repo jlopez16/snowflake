@@ -1,0 +1,92 @@
+-- Data from Snowflake and sent to Kafka
+
+{
+    "customerId": "AAAAAAAACDKALGAA",
+    "firstName": "Camilla",
+    "lastName": "Ayers",
+    "birthDay": 13,
+    "birthMonth": 9,
+    "birthYear": 1981,
+    "email": "Camilla.Ayers@JK3dxJCQaMjS9O.edu",
+    "address": {
+        "street": "Tenth Maple",
+        "number": "Suite U",
+        "city": "Highland",
+        "state": "UT",
+        "country": "United States"
+    }
+}
+
+
+-- Data retrieved from Mongo
+
+[
+    {
+        "customerId": "101",
+        "firstName": "Octavio",
+        "lastName": "Paz",
+        "email": "octavio.paz@email.com",
+        "birthDay": 31,
+        "birthMonth": 3,
+        "birthYear": 1914,
+        "address": {
+            "street": "Periferico Sur",
+            "number": "1234",
+            "city": "Benito Juarez",
+            "state": "Mexico City",
+            "country": "MX"
+        },
+        "receivedAt": "Thu Jul 03 21:33:52 CST 2025"
+    },
+    {
+        "customerId": "105",
+        "firstName": "Octavio",
+        "lastName": "Paz",
+        "email": "octavio.paz@email.com",
+        "birthDay": 31,
+        "birthMonth": 3,
+        "birthYear": 1914,
+        "address": {
+            "street": "Periferico Sur",
+            "number": "1234",
+            "city": "Benito Juarez",
+            "state": "Mexico City",
+            "country": "MX"
+        },
+        "receivedAt": "Thu Jul 03 21:34:21 CST 2025"
+    },
+    {
+        "customerId": "AAAAAAAAAAAAADCA",
+        "firstName": "Molly",
+        "lastName": "Werner",
+        "email": "Molly.Werner@Pyr73maVAYkYa2F7.org",
+        "birthDay": 28,
+        "birthMonth": 10,
+        "birthYear": 1978,
+        "address": {
+            "street": "Oak 11th",
+            "number": "Suite 120",
+            "city": "Hillcrest",
+            "state": "GA",
+            "country": "United States"
+        },
+        "receivedAt": "2025-07-04T14:18:07.658347Z"
+    },
+    {
+        "customerId": "AAAAAAAACDKALGAA",
+        "firstName": "Camilla",
+        "lastName": "Ayers",
+        "email": "Camilla.Ayers@JK3dxJCQaMjS9O.edu",
+        "birthDay": 13,
+        "birthMonth": 9,
+        "birthYear": 1981,
+        "address": {
+            "street": "Tenth Maple",
+            "number": "Suite U",
+            "city": "Highland",
+            "state": "UT",
+            "country": "United States"
+        },
+        "receivedAt": "2025-07-04T14:39:16.381572Z"
+    }
+]
