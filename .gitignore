@@ -3,3 +3,6 @@ customer-api/.gitattributes
 *.properties
 customer-api/mvnw.cmd
 customer-api/mvnw
+kafka-consumer/mvnw.cmd
+kafka-consumer/mvnw
+kafka-consumer/.gitattributes

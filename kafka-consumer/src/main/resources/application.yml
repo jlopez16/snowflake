@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: kafka-consumer
+  data:
+    mongodb:
+      uri: mongodb://admin:admin123@localhost:27017/customerdb?authSource=admin
+
+  kafka:
+    bootstrap-servers: localhost:9092
+
+kafka:
+  topic: "customer-topic"
+  group-id: "customer-group"
