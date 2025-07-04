@@ -5,7 +5,7 @@ import org.recluit.customerapi.dto.CustomerDto;
 import org.springframework.kafka.core.KafkaTemplate;
 import org.springframework.stereotype.Service;
 
-import java.util.List;
+import java.util.Optional;
 
 @Service
 public class CustomerService {
@@ -19,9 +19,7 @@ public class CustomerService {
         this.properties = properties;
     }
 
-    public void publishCustomers(List<CustomerDto> customers) {
-        for (CustomerDto customer : customers) {
-            kafkaTemplate.send(properties.getTopic(), customer.customerId().toString(), customer);
-        }
+    public void publishCustomer(Optional<CustomerDto> customer) {
+        customer.ifPresent(customerDto -> kafkaTemplate.send(properties.getTopic(), customerDto.customerId().toString(), customerDto));
     }
 }
