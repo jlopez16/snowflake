@@ -33,7 +33,7 @@ public class CustomerConsumer {
                 dto.birthMonth(),
                 dto.birthYear(),
                 dto.address(),
-                Instant.now()
+                Instant.now().toString()
         );
         repository.save(doc);
         log.info("Consumer processed customer: {}", doc.customerId());

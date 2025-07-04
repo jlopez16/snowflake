@@ -7,7 +7,20 @@ spring:
 
   kafka:
     bootstrap-servers: localhost:9092
+    consumer:
+      value-deserializer: org.springframework.kafka.support.serializer.JsonDeserializer
+      properties:
+        spring:
+          json:
+            trusted:
+              packages: org.recluit.kafkaconsumer.model
+            value:
+              default:
+                type: org.recluit.kafkaconsumer.model.CustomerDto
 
 kafka:
   topic: "customer-topic"
   group-id: "customer-group"
+
+server:
+  port: 8082

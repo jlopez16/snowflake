@@ -1,7 +1,7 @@
 package org.recluit.kafkaconsumer.model;
 
 public record CustomerDto(
-        Integer customerId,
+        String customerId,
         String firstName,
         String lastName,
         Integer birthDay,
