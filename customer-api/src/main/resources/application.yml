@@ -1,0 +1,18 @@
+spring:
+  kafka:
+    bootstrap-servers: localhost:9092
+  datasource:
+    driver-class-name: net.snowflake.client.jdbc.SnowflakeDriver
+    url: jdbc:snowflake://<your_account>.snowflakecomputing.com/?db=SNOWFLAKE_SAMPLE_DATA&schema=TPCDS_SF10TCL
+    username: <your_user_snowflake>
+    password: <your_password_snowflake>
+  data:
+    jdbc:
+      repositories:
+        enabled: false
+kafka:
+  topic: "customer-topic"
+  group-id: "customer-group"
+
+server:
+  port: 8081
