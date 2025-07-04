@@ -1,0 +1,5 @@
+.DS_Store
+customer-api/.gitattributes
+*.properties
+customer-api/mvnw.cmd
+customer-api/mvnw
