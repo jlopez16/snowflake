@@ -34,7 +34,7 @@ Service that consumes messages from Kafka and stores them into MongoDB.
 
 ---
 
-### 4. **docker-compose (local dev environment)**
+### 3. **docker-compose (local dev environment)**
 The root `docker-compose.yml` orchestrates the services required to run the entire data pipeline locally.
 
 - **Services**:
