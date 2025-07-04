@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("/api/customers")
+@RequestMapping("/api/customers1")
 public class TestKafkaController {
 
     private final MockCustomerService customerService;
@@ -23,7 +23,7 @@ public class TestKafkaController {
     }
 
     @GetMapping("/fetch/{id}")
-    public ResponseEntity<String> fetchAndSend(@PathVariable int id) {
+    public ResponseEntity<String> fetchAndSend(@PathVariable String id) {
         try {
             CustomerDto customer = customerService.getCustomerById(id);
             kafkaTemplate.send("customer-topic", String.valueOf(id), customer);

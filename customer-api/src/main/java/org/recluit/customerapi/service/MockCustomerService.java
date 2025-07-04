@@ -6,7 +6,7 @@ import org.springframework.stereotype.Service;
 
 @Service
 public class MockCustomerService {
-    public CustomerDto getCustomerById(int id){
+    public CustomerDto getCustomerById(String id){
         return new CustomerDto(id,
                 "Octavio",
                 "Paz",

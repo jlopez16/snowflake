@@ -1,7 +1,7 @@
 package org.recluit.customerapi.dto;
 
 public record CustomerDto(
-        Integer customerId,
+        String customerId,
         String firstName,
         String lastName,
         Integer birthDay,
