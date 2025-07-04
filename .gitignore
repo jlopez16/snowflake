@@ -7,3 +7,4 @@ kafka-consumer/mvnw.cmd
 kafka-consumer/mvnw
 kafka-consumer/.gitattributes
 customer-api/src/main/resources/application-local.yml
+kafka-consumer/src/main/resources/application-local.yml

@@ -7,6 +7,8 @@ spring:
     username: <your_user_snowflake>
     password: <your_password_snowflake>
   data:
+    mongodb:
+      uri: mongodb://admin:admin123@localhost:27017/customerdb?authSource=admin
     jdbc:
       repositories:
         enabled: false
